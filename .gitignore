@@ -2,6 +2,9 @@
 db/
 incremental_db/
 output_files/
+precision_work/
+work/
+simulation/
 *.rpt
 *.chg
 *.htm
@@ -25,6 +28,8 @@ output_files/
 *.dsn
 *.psr
 *.jdi
+*.bak
+*.log
 
 # Nix
 *.drv
