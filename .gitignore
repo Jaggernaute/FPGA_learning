@@ -1,0 +1,32 @@
+# Quartus II
+db/
+incremental_db/
+output_files/
+*.rpt
+*.chg
+*.htm
+*.qws
+*.qdf
+*.sof
+*.pof
+*.done
+*.pin
+*.smsg
+*.summary
+*.qdb
+*.qdz
+*.qip
+*.qxp
+*.rff
+*.sld
+*.sta
+*.swf
+*.sld
+*.dsn
+*.psr
+*.jdi
+
+# Nix
+*.drv
+result*
+.direnv

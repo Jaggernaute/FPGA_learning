@@ -1,0 +1,13 @@
+# Pin assignment
+
+# A and B 
+  set_location_assignment PIN_F15 -to A 
+  # -> Slide Switch[9]
+  
+  set_location_assignment PIN_B14 -to B 
+  # -> Slide Switch[8]
+
+# S
+  set_location_assignment PIN_B11 -to S 
+  # -> LED[9]
+
