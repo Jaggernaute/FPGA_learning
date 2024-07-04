@@ -4,13 +4,11 @@
 PROJECT = switches
 VHDL_FILES = sw1.vhd
 TESTBENCH_FILES = tb_switches.vhd
+SIMULATION_DIRECTORY = sim
 
 # Paths to Quartus II tools
 QUARTUS_SH = quartus_sh
 QUARTUS_PGM = quartus_pgm
-MODELSIM_VSIM = vsim
-MODELSIM_VCOM = vcom
-MODELSIM_VLIB = vlib
 
 QSF_FILE = $(PROJECT).qsf
 SDC_FILE = $(PROJECT).sdc
@@ -28,14 +26,6 @@ compile:
 .PHONY: program # programs the FPGA
 program:
 	$(QUARTUS_PGM) -c 1 -m JTAG -o "p;$(PROGRAM_FILE)"
-
-.PHONY: simulate # Simulate the testbench 
-simulate:
-	# Compile the VHDL
-	$(MODELSIM_VLIB) work
-	$(MODELSIM_VCOM) -work work $(TESTBENCH_FILES) $(VHDL_FILES)
-	# Launch the simulation
-	$(MODELSIM_VSIM) -c work.tb_switches -do "run -all"
 
 .PHONY: clean # Clean build files (incremental_db, output_files)
 clean:

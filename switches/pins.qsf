@@ -8,6 +8,9 @@
   # -> Slide Switch[8]
 
 # S
-  set_location_assignment PIN_B11 -to S 
+  set_location_assignment PIN_B11 -to S1 
   # -> LED[9]
+  
+  set_location_assignment PIN_A11 -to S2
+  # -> LED[8]
 
